@@ -1,0 +1,15 @@
+<div *ngIf="pet">
+    <h2>{{pet.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{pet.id}}</div>
+    <div>
+      <label for="pet-name">Pet name: </label>
+      <input  *ngIf = isAdmin() id="pet-name" [(ngModel)]="pet.name" placeholder="Pet name"/>
+      <label *ngIf = "isAdmin() == false">{{pet.name}}</label>
+      <br><br>
+      <label for="pet-type">Pet type: </label>
+      <input  *ngIf = isAdmin() id="pet-type" [(ngModel)]="pet.animaltype" placeholder="Pet type"/>
+      <label *ngIf = "isAdmin() == false">{{pet.animaltype}}</label>
+    </div>
+    <button type="button" (click)="goBack()">go back</button>
+    <button *ngIf = isAdmin() type="button" (click)="save()">save</button>
+  </div>

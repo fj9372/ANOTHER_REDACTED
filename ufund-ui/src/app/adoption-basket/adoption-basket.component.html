@@ -1,0 +1,22 @@
+<h2>Adoption Basket</h2>
+
+<div>
+
+<ul class="pets">
+  <li *ngFor="let pet of pets">
+    <a routerLink="/detail/{{pet.id}}">
+      <span class="badge">{{pet.id}}</span> Name: {{pet.name}}
+    </a>
+    <button type="button" class="delete" title="delete pet"
+      (click)="delete(pet)">x</button>
+  </li>
+</ul>
+</div>
+<div *ngIf = hasPets()>
+  <button class = adopt-button type="button" (click)="adopt()">Adopt</button>
+</div>
+<div *ngIf = "hasPets() != true"> 
+  <h2>Wow you have nothing in your basket :&#40;</h2>
+</div>
+
+<h4 style = "color: red;">{{message}}</h4>

@@ -1,0 +1,29 @@
+<h2>All Pets</h2>
+
+<div *ngIf = isAdmin()>
+  <label for="new-pet">Pet name: </label>
+  <input id="new-pet" #petName />
+
+  <label for="new-pet-type">Pet type: </label>
+  <input id="new-pet-type" #petType />
+
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button type="button" class="add-button" (click)="add(petName.value, petType.value);">
+    Add pet
+  </button>
+</div>
+
+<ul class="pets">
+  <li *ngFor="let pet of pets">
+    <a routerLink="/detail/{{pet.id}}">
+      <span class="badge">{{pet.id}}</span> 
+      Name: {{pet.name}} <br>
+    </a>
+    <button type="button" class="addBasket" title="delete pet"
+      (click)="addToBasket(pet)" *ngIf = "isAdmin()!=true">+</button>
+    <button type="button" class="addBasket" title="delete pet"
+      (click)="delete(pet)" *ngIf = isAdmin()>-</button>
+  </li>
+</ul>
+
+<h4 style = "color: red;">{{message}}</h4>

@@ -1,0 +1,16 @@
+<h4>Notifications</h4>
+
+<ul>
+  <li *ngFor="let notif of notifications">
+    <a>
+    <span class="badge">{{notif}}</span>
+    <br>
+    </a>
+    <button type="button" class="delete" title="delete pet" (click)="deleteNotif(notif)">-</button>
+  </li>
+</ul>
+
+
+
+
+

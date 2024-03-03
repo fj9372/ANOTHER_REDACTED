@@ -1,0 +1,18 @@
+<div class="container">
+<div class="login">
+    <label for="username-box">Username</label>
+    <input id="username-box" #usernameBox />
+
+    <label for="password-box">Password</label>
+    <input id="password-box" #passwordBox />
+
+    <label for="confirm-password-box">Confirm Password</label>
+    <input id="confirm-password-box" #confirmPasswordBox />
+
+    <button type="button" class="add-button" (click)="createUser(usernameBox.value, passwordBox.value, confirmPasswordBox.value); ">
+        Sign up
+      </button>
+    <button type="button" (click)="goBack()">go back</button>
+      <h4 style = "color: red;">{{message}}</h4>
+  </div>
+</div>

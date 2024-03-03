@@ -1,0 +1,15 @@
+<h2>Adoption History</h2>
+
+<div>
+<ul class="pets">
+  <li *ngFor="let pet of pets">
+    <a routerLink="/detail/{{pet.id}}">
+      <span class="badge">{{pet.id}}</span> {{pet.name}}
+    </a>
+  </li>
+</ul>
+</div>
+
+<div *ngIf = "hasPets() != true"> 
+  <h2>Wow you haven't adopted any pets? :&#40;</h2>
+</div>

@@ -1,0 +1,16 @@
+<div class="container">
+<div class="login">
+    <label for="username-box">Username</label>
+    <input id="username-box" #usernameBox />
+
+    <label for="password-box">Password</label>
+    <input id="password-box" #passwordBox />
+
+    <button type="button" class="add-button" (click)="login(usernameBox.value, passwordBox.value); ">
+        Log in
+      </button>
+
+      <span><a href="http://localhost:4200/create">Create an Account</a></span>
+  </div>
+</div>
+<h4 style = "color: red;">{{message}}</h4>

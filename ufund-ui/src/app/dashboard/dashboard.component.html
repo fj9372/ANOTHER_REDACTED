@@ -1,0 +1,9 @@
+<h2>Top Pets</h2>
+<div class="pets-menu">
+  <a *ngFor="let pet of pets"
+      routerLink="/detail/{{pet.id}}">
+      {{pet.name}}
+  </a>
+</div>
+
+<app-pet-search></app-pet-search>

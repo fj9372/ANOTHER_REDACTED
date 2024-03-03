@@ -1,0 +1,26 @@
+<div class="container" *ngIf = "donated == false">
+    <div class = "login">
+        <label for="money-box">Amount to donate</label>
+        <input type = number id="number-box" #moneyBox />
+        <br>
+        <label for="number-box">Card number</label>
+        <input type = number id="number-box" #numberBox />
+        <br>
+        <label for="name-box">Name on the card</label>
+        <input type="text" id="name-box" #nameBox />
+        <br>
+        <label for="date-box">Expiration date</label>
+        <input type="date" id="name-box" #dateBox />
+        <br>
+    
+        <button type="button" class="add-button" (click)="donate(numberBox.value, moneyBox.value, nameBox.value, dateBox.value); ">
+            Donate
+          </button>
+          
+        </div>
+      </div>
+      <br>
+<h4 style = "color: red;" *ngIf = "donated == false" >{{message}} </h4>
+<h1 style = "color: red;" *ngIf = "donated == true" >{{message}} </h1>
+
+    

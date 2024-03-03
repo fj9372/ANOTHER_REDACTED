@@ -1,0 +1,18 @@
+<div class="container">
+
+  <h1>{{title}}</h1>
+  
+
+  
+  <nav *ngIf = "showNav">
+    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/pets">Pets</a>
+    <a routerLink="/baskets" *ngIf = "admin != true">Adoption Basket</a>
+    <a routerLink="/donate">Donate</a>
+    <a routerLink="/notifications">Notifications</a>
+    <a routerLink="/account">Account</a>
+  </nav>
+  
+  
+  <router-outlet></router-outlet> 
+</div>

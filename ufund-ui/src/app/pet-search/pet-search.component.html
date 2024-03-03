@@ -1,0 +1,17 @@
+<div class="container" id="search-component">
+    <label for="search-box">Pet Search</label>
+    <input #searchBox id="search-box" (input)="search(searchBox.value)" />
+    <select name = "search" id = "search" style = "display: inline-block;" (change) = 'changeSearch()'>
+      <option value = "name">pet name</option>
+      <option value = "type">pet type</option>
+    </select>
+    <ul class="search-result">
+      <li *ngFor="let pet of pets$ | async" >
+        <a routerLink="/detail/{{pet.id}}">
+          Name: {{pet.name}}
+          <br>
+          Type: {{pet.animaltype}}
+        </a>
+      </li>
+    </ul>
+  </div>

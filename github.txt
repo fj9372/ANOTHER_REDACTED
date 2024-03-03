@@ -1,0 +1,36 @@
+commit 9b66e6981a272a5ceede5241901c64396a211e6b
+Author: Ajthepro5378 <Ajthepro5378@gmail.com>
+Date:   Wed Sep 27 18:47:18 2023 -0400
+
+    Added my name
+
+commit aa5bc033453d56334d3fbbbf84ff8008741bbbe9
+Merge: 0e33f23 10ef3bf
+Author: Hunter Landolfi <hwl4065@rit.edu>
+Date:   Wed Sep 27 18:05:21 2023 -0400
+
+    added name to readme.md
+
+commit 0e33f236bda11a76e692be417ddadec3a53086d8
+Author: Hunter Landolfi <hwl4065@rit.edu>
+Date:   Wed Sep 27 18:03:50 2023 -0400
+
+    added name to readme.md
+
+commit 10ef3bf81f7612d1f977b9110c7fd0aed45959ed
+Author: fj9372 <fj9372@rit.edu>
+Date:   Wed Sep 27 18:02:31 2023 -0400
+
+    added name
+
+commit 97503977489ee23687b17982c4e07b7d0f17ce30
+Author: acl2696 <acl2696@g.rit.edu>
+Date:   Wed Sep 27 17:58:26 2023 -0400
+
+    Added my name
+
+commit ffcd8612c5f69483537b025c90dfe6b68f588b74
+Author: github-classroom[bot] <66690702+github-classroom[bot]@users.noreply.github.com>
+Date:   Wed Sep 27 20:29:44 2023 +0000
+
+    Initial commit
